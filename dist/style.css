@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+li{
+    list-style-type: none;
+}
+header{
+    background: #e74c3c;
+    background: linear-gradient(83deg, #e74c3c 0%, #ce4536 16%, #b53d31 33%, #9d362c 50%, #852f26 66%, #6e2821 83%, #58211c 100%);
+}
+div#logo{
+    width: 280px;
+    height:80px;
+    background: url(./logo.png) no-repeat center;
+    background-size: cover;
+    margin:auto;
+    /* transform: scale(3) */
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: #e74c3c;
+    background: linear-gradient(83deg, #e74c3c 0%, #ce4536 16%, #b53d31 33%, #9d362c 50%, #852f26 66%, #6e2821 83%, #58211c 100%);
+    color: white;
+    margin-top:40px;
+    padding: 10px 10px;
+}
+footer > div > a{
+    text-decoration: none;
+    color: white;
+}
+footer > div > a:hover{
+    transform: scale(1.1);
+    transition: 0.2s all ease-in-out;
+}
+footer > div:nth-child(1) > a{
+    display: block;
+}
+footer>div:nth-child(3)>a{
+    display: inline-block;
+    font-size: 20px;
+    margin-left:10px;
+    margin-top: 4px;
+}
+footer>div:nth-child(2){
+    text-align:right;
+}
+footer>div:nth-child(2)>div:first-child{
+    width: 140px;
+    height: 24px;
+    background: url(./logo.png) no-repeat center;
+    background-size: cover;
+    margin:auto;
+}
+
+
+/* font styles */
+@font-face {
+    font-family: 'sunset-icon';
+    src:  url('fonts/sunset-icon.eot?y1iz5');
+    src:  url('fonts/sunset-icon.eot?y1iz5#iefix') format('embedded-opentype'),
+      url('fonts/sunset-icon.ttf?y1iz5') format('truetype'),
+      url('fonts/sunset-icon.woff?y1iz5') format('woff'),
+      url('fonts/sunset-icon.svg?y1iz5#sunset-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'sunset-icon' !important;
+    /* speak: none; */
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .sunset-cross:before {
+    content: "\ea0f";
+  }
+  .sunset-checkmark:before {
+    content: "\ea10";
+  }
+  .sunset-facebook:before {
+    content: "\ea90";
+  }
+  .sunset-instagram:before {
+    content: "\ea92";
+  }
+  .sunset-twitter:before {
+    content: "\ea96";
+  }
